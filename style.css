@@ -1,0 +1,31 @@
+body{
+    background-color: #4EB2AD;
+}
+
+.navbar{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+#nav-selection{
+    width: 400px;
+}
+
+#nav-list{
+    font-size: 24px;
+    background-color: white;
+    padding: 2px;
+    list-style-type: none;
+}
+
+#nav-list li {
+    display: inline-block;
+}
+#contact-btn{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
