@@ -1,3 +1,9 @@
+html, body{ 
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 body{
     background-color: #4EB2AD;
 }
@@ -5,27 +11,63 @@ body{
 .navbar{
     font-weight: bold;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 3em;
+    align-items: center; 
 }
 
-#nav-selection{
-    width: 400px;
+.logo-text{
+    background: rgb(11, 118, 147);
+    color: white;
+    font-size: 30px;
+    border-radius: 5em;
+    padding: 7px;
 }
 
 #nav-list{
     font-size: 24px;
     background-color: white;
-    padding: 2px;
+    padding: .4em;
+    border-radius: 20px;
     list-style-type: none;
 }
 
 #nav-list li {
     display: inline-block;
+    margin: 0 20px;
 }
 #contact-btn{
     background-color: black;
     color: white;
+    padding: .4em;
+    border-radius: 20px;
+    font-size: 24px;
     border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+    .navbar{
+        display: block;
+    }
+
+    .nav-option-div{
+        padding: 0;
+    }
+
+    #nav-list{
+        border-radius: 0;
+    }
+    #nav-list li {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    #contact-btn{
+        width: 100%;
+        border-radius: 0;
+    }
 }
 
