@@ -4,24 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>JC's Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <nav class="navbar">
-        <label class="logo"><p class ="logo-text">Bluem</p></label>
-            <center class = "nav-option-div">
-                <ul id="nav-list">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Projects</li>
-                  <li>Achievements</li>
-                  <li>Contact</li>
-                </ul>
-            </center>
+    <nav>
 
-        
-            <button class="btn" id="contact-btn">Contact</button>
+      <input type = "checkbox" id = "check">
+      <label for = "check" class = "navmenu-btn"><i class = "fa fa-bars menu-icon"></i></label>
+      <label class="logo">JC</label>
+      <button class = "contact-btn">Contact</button>
+
+      <ul>
+        <li><a class = "active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Achievements</a></li>
+      </ul>
 
     </nav>
+    <script src="index.js"></script>
   </body>
 </html>
+
