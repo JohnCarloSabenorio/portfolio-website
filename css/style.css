@@ -1,0 +1,59 @@
+
+
+:root{
+  --dark-purple: #2b142e;
+  --text-color: white;
+}
+
+@font-face{
+  font-family: Inter;
+  src: url('../fonts/Inter_Regular.ttf');
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Inter;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: center;
+  gap: clamp(10px, 5vw , 40px);
+  padding: 10px;
+  /* background: green; */
+  background-color: var(--dark-purple); 
+}
+
+nav p {
+  line-height: 40px;  
+}
+
+.my-logo{
+  width: 40px;
+  height: 40px;
+}
+
+nav a{
+  color: var(--text-color);
+}
+
+.mobile-nav{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  background: green;
+  left: -100%;
+}
+
+
+/* nav:hover ~ .mobile-nav{
+  left: 0;
+  transition: all .5s ease;
+} */
