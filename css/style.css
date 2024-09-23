@@ -29,6 +29,9 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 
