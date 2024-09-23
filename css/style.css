@@ -46,7 +46,7 @@ nav{
   padding: 1rem;
   /* background: green; */
   background-color: var(--dark-purple); 
-  /* position: sticky; */
+  position: sticky;
 }
 
 
@@ -147,13 +147,11 @@ header{
 }
 
 .about-section{
-  margin-top: 4.3rem;
   display: flex;
   justify-content: center;
   gap: 3rem;
   color: white;
-  margin-bottom: 50px;
-  margin-right: 50px;
+  margin: 2rem 2rem 2rem 0;
 }
 
 .about-text{
