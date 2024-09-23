@@ -2,6 +2,8 @@
 
 :root{
   --dark-purple: #2b142e;
+  --light-purple: #DDAEED;
+  --red: #B72929;
   --text-color: white;
 }
 
@@ -17,6 +19,7 @@
   font-family: Inter;
   box-sizing: border-box;
   text-decoration: none;
+  font-size: 14px;
 }
 
 
@@ -41,19 +44,65 @@ nav p {
 
 nav a{
   color: var(--text-color);
+  font-weight: bold;
 }
 
+.contact-btn{
+  background: var(--red);
+  padding: .3rem .5rem;
+  border-radius: 3px;
+}
+
+#navmenu-btn{
+  line-height: 2.5rem;
+  display: none;
+  color: white;
+  cursor: pointer;
+}
 .mobile-nav{
   position: fixed;
   width: 100%;
   text-align: center;
   height: 100vh;
-  background: green;
+  margin-top: 50px;
+  background: var(--dark-purple);
   left: -100%;
 }
 
+.mobile-nav li{
+  margin-top: .6rem;
+  padding: .5rem;
+}
 
-/* nav:hover ~ .mobile-nav{
-  left: 0;
-  transition: all .5s ease;
-} */
+#toggle-switch{
+  display: none;
+}
+
+
+@media(max-width: 600px){
+
+  nav{
+    justify-content: space-between;
+  }
+
+  .nav-links-desktop{
+    display: none;
+  }
+
+  .mobile-nav{
+    transition: all .5s ease;
+  }
+
+  #navmenu-btn{
+    display: inline;
+  }
+
+  #toggle-switch:checked ~ .mobile-nav{
+    left: 0;
+  }
+
+  .contact-btn{
+    border-radius: 0;
+  }
+}
+
