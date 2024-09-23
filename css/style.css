@@ -7,6 +7,7 @@
   --red: #B72929;
   --text-color: white;
   --border-radius: 10px;
+  --title-size: 3.3rem;
 }
 
 @font-face{
@@ -113,7 +114,7 @@ header{
 
 .header-desc h1, .header-desc h1 span{
   color: var(--text-color);
-  font-size: 3.3rem;
+  font-size: var(--title-size);
   line-height: 3rem;
   margin-bottom: 1.6rem;
 }
@@ -146,7 +147,7 @@ header{
   justify-content: center;
   gap: 3rem;
   color: white;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   margin-right: 50px;
 }
 
@@ -178,9 +179,37 @@ header{
 
 footer{
   background-color: var(--dark-purple);
-  height: 400px;
-
+  text-align: center;
+  color: var(--text-color);
+  padding: 2rem;
 }
+
+footer h1, footer h1 span{
+  font-size: 2.5rem;
+}
+
+footer h1 span{
+  color: var(--light-purple);
+}
+
+footer p{
+  line-height: 3rem;
+}
+
+footer p a{
+  text-decoration: underline;
+}
+.media-links{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.media-links p img{
+  vertical-align: middle;
+}
+
 @media(max-width: 800px){
 
   nav{
