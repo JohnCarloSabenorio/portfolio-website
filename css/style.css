@@ -8,6 +8,7 @@
   --text-color: white;
   --border-radius: 10px;
   --title-size: 3.7rem;
+  --btn-padding: .5rem 1.3rem;
 }
 
 @font-face{
@@ -65,7 +66,7 @@ nav a{
 
 .contact-btn{
   background: linear-gradient(to right, var(--red) -20%, black 300%);
-  padding: .3rem .5rem;
+  padding: var(--btn-padding);
   border-radius: 3px;
 }
 
@@ -137,10 +138,12 @@ header{
 .dl-btn{
   font-weight: bold;
   margin-top: 3rem;
-  padding: .5rem 1.5rem;
+  padding: var(--btn-padding);
   color: white;
   background: linear-gradient(to right, var(--button-purple) -20%, black 300%);
   cursor: pointer;
+  border-radius: 3px;
+  border: none;
 }
 
 .about-section{
