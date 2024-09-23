@@ -3,8 +3,10 @@
 :root{
   --dark-purple: #2b142e;
   --light-purple: #DDAEED;
+  --button-purple: #bb85cd;
   --red: #B72929;
   --text-color: white;
+  --border-radius: 10px;
 }
 
 @font-face{
@@ -19,27 +21,37 @@
   font-family: Inter;
   box-sizing: border-box;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
 }
 
+body{
+  background-image: url("/images/main_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
 
 
 nav{
+  top: 0; 
+  z-index: 1000; 
   display: flex;
   justify-content: center;
-  gap: clamp(10px, 5vw , 40px);
-  padding: 10px;
+  gap: clamp(10px, 5vw , 80px);
+  padding: 1rem;
   /* background: green; */
   background-color: var(--dark-purple); 
+  /* position: sticky; */
 }
 
+
 nav p {
-  line-height: 40px;  
+  line-height: 3.5rem;  
 }
 
 .my-logo{
-  width: 40px;
-  height: 40px;
+  width: 3.5rem;
+  height:3.5rem;
 }
 
 nav a{
@@ -48,7 +60,7 @@ nav a{
 }
 
 .contact-btn{
-  background: var(--red);
+  background: linear-gradient(to right, var(--red) -20%, black 300%);
   padding: .3rem .5rem;
   border-radius: 3px;
 }
@@ -78,8 +90,95 @@ nav a{
   display: none;
 }
 
+header{
+  display: flex;
+  /* background-color: var(--dark-purple); */
+  background-color: var(--dark-purple);
+  padding: 2rem 1rem;
+  padding-bottom: 10rem;
+  clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%);
+  justify-content: center;
+  gap: 2rem;
+}
 
-@media(max-width: 600px){
+.header-image{
+  border-radius: var(--border-radius);
+  width: 400px;
+  height: 500px;
+}
+
+
+.header-desc h1, .header-desc h1 span{
+  color: var(--text-color);
+  font-size: 3.3rem;
+  line-height: 3rem;
+  margin-bottom: 1.6rem;
+}
+
+.header-desc p{
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+
+.header-desc h1 span{
+  color: var(--light-purple);
+}
+
+.header-desc p{
+  color: var(--text-color);
+}
+
+.dl-btn{
+  font-weight: bold;
+  margin-top: 3rem;
+  padding: .5rem 1.5rem;
+  color: white;
+  background: linear-gradient(to right, var(--button-purple) -20%, black 300%);
+}
+
+.about-section{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  color: white;
+  margin-bottom: 200px;
+  margin-right: 50px;
+}
+
+.about-text{
+  border-radius: var(--border-radius);
+  background-color: var(--dark-purple);
+  padding: 1.5rem 2rem;
+  width: 500px;
+}
+
+.about-text h1{
+  font-size:2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p{
+  line-height: 1.8rem;
+}
+
+.about-section img{
+  width: 450px;
+  height: 500px;
+  border-radius: var(--border-radius);
+}
+
+.rose-border{
+  text-align: center;
+}
+
+footer{
+  background-color: var(--dark-purple);
+  height: 400px;
+
+}
+@media(max-width: 800px){
 
   nav{
     justify-content: space-between;
