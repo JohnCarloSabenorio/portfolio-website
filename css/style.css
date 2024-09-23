@@ -26,6 +26,7 @@
 }
 
 body{
+  background-color: green;
   background-image: url("../images/mainbg.png");
   background-repeat: no-repeat;
   background-size: cover;
