@@ -8,7 +8,7 @@
   --text-color: white;
   --border-radius: .5rem;
   --title-size: 3.7rem;
-  --btn-padding: .5rem 1.3rem;
+  --btn-padding: 1rem 1.3rem;
 }
 
 @font-face{
@@ -65,8 +65,8 @@ nav a{
 }
 
 .contact-btn{
-  background: linear-gradient(to right, var(--red) -20%, black 300%);
-  padding: var(--btn-padding);
+  background: linear-gradient(to right, var(--red) -20%, black 900%);
+  padding: .7rem 1.3rem;
   border-radius: var(--border-radius);
 }
 
@@ -118,6 +118,7 @@ header{
   margin-top: 1.3rem;
   line-height: 3.5rem;
   margin-bottom: 1.6rem;
+  text-wrap: balance;
 }
 
 .header-desc p{
@@ -139,7 +140,7 @@ header{
   margin-top: 3rem;
   padding: var(--btn-padding);
   color: white;
-  background: linear-gradient(to right, var(--button-purple) -20%, black 300%);
+  background: linear-gradient(to right, var(--button-purple) -20%, black 900%);
   cursor: pointer;
   border-radius: var(--border-radius);
   border: none;
@@ -254,6 +255,11 @@ footer p a{
 
   header{
     flex-direction: column;
+  }
+
+  .header-desc h1{
+    text-align: center;
+    line-height: 4rem;
   }
   .header-image{
     max-width: 100%;
