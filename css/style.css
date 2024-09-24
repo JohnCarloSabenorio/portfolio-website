@@ -6,7 +6,7 @@
   --button-purple: #bb85cd;
   --red: #B72929;
   --text-color: white;
-  --border-radius: 10px;
+  --border-radius: .5rem;
   --title-size: 3.7rem;
   --btn-padding: .5rem 1.3rem;
 }
@@ -67,7 +67,7 @@ nav a{
 .contact-btn{
   background: linear-gradient(to right, var(--red) -20%, black 300%);
   padding: var(--btn-padding);
-  border-radius: 3px;
+  border-radius: var(--border-radius);
 }
 
 #navmenu-btn{
@@ -142,7 +142,7 @@ header{
   color: white;
   background: linear-gradient(to right, var(--button-purple) -20%, black 300%);
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   border: none;
 }
 
@@ -242,4 +242,27 @@ footer p a{
     border-radius: 0;
   }
 }
+
+@media(max-width: 800px){
+  .about-text{
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+ 
+  .about-section img{
+    max-width: 100%;
+    padding: 1rem;
+    padding-top: 0;
+    border-radius: 1.5rem;
+  }
+
+  footer{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+}
+
 
