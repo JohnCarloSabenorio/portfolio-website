@@ -298,10 +298,14 @@ footer p a{
   }
 
   footer{
-    padding-left: 0;
-    padding-right: 0;
+    padding: 1rem 0 0 0;
   }
 
+  footer p{
+    margin-top: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+  }
 
 }
 
