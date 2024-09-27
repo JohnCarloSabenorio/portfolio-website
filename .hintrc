@@ -22,8 +22,7 @@
       {
         "ignore": [
           "text-wrap",
-          "text-wrap: balance",
-          "text-wrap: pretty"
+          "text-wrap: balance"
         ]
       }
     ]
