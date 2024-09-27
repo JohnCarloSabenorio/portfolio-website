@@ -317,7 +317,12 @@ footer p a{
 
 @media(max-width: 800px){
   .about-text{
+<<<<<<< HEAD
     text-wrap: pretty;
+=======
+    max-width: 100%;
+    border-radius: 0;
+>>>>>>> parent of 024c5f7 (added text-wrap: pretty on about-text)
   }
 
 
