@@ -294,7 +294,6 @@ footer p a{
   
   .about-text{
     max-width: 80%;
-    min-width: 500px;
   }
 
   .about-text h1{
@@ -302,7 +301,7 @@ footer p a{
   }
 
   .about-text p {
-    text-align: left;
+    text-align: center;
   }
 
  .about-image-container{
@@ -316,17 +315,14 @@ footer p a{
 }
 
 @media(max-width: 800px){
-  .about-text{
-<<<<<<< HEAD
-    text-wrap: pretty;
-=======
-    max-width: 100%;
-    border-radius: 0;
->>>>>>> parent of 024c5f7 (added text-wrap: pretty on about-text)
+
+  .about-text h1{
+    text-align: left;
   }
-
-
-
+  .about-text p {
+    text-align: justify;
+    max-width: 50ch;
+  }
   footer{
     padding: 1rem 0 0 0;
   }
