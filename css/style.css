@@ -29,6 +29,7 @@
 body{
   background-image: url("../images/mainbg.png");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
   margin: 0;
@@ -100,8 +101,8 @@ header{
   /* background-color: var(--dark-purple); */
   background-color: var(--dark-purple);
   padding: 2rem 1rem;
-  padding-bottom: 10rem;
-  clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%);
+  padding-bottom: 6rem;
+  /* clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%); */
   justify-content: center;
   gap: 2rem;
 }
@@ -137,7 +138,7 @@ header{
 
 .dl-btn{
   font-weight: bold;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   padding: var(--btn-padding);
   color: white;
   background: linear-gradient(to right, var(--button-purple) -20%, black 900%);
@@ -152,6 +153,7 @@ main{
 }
 
 .rose{
+  max-width: 600px;
   width: 80%;
 }
 .about-section{
@@ -180,8 +182,9 @@ main{
 }
 
 .about-section img{
-  max-width: 450px;
   border-radius: var(--border-radius);
+  max-width: 600px;
+  margin:0;
 }
 
 .rose-border{
@@ -241,6 +244,7 @@ footer p a{
     
   }
 
+
   #navmenu-btn{
     display: inline;
   }
@@ -255,38 +259,56 @@ footer p a{
 
   header{
     flex-direction: column;
+    text-align: center;
+    margin:0;
   }
 
   .header-desc h1{
     text-align: center;
     line-height: 4rem;
+  } 
+
+  .header-desc p {
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .header-image-container{
+    padding: 0;
+    margin:0;
+    text-align: center;
   }
   .header-image{
-    max-width: 100%;
- }
+    width: 100%;
+    height: 100%;
+    margin:0;
+  }
 
   .about-section{
     flex-direction: column;
     align-items: center;
     padding: 0;
     margin:0;
-    
   }
 
   
   .about-text{
     max-width: 80%;
+    min-width: 500px;
   }
 
   .about-text h1{
     text-align: center;
   }
 
- 
-  .about-section img{
-    max-width: 80%;
-    border-radius: var(--border-radius);
+  .about-text p {
+    text-align: center;
   }
+
+ .about-image-container{
+  text-align: center;
+ }
+
 
   .media-name{
     display: none;
@@ -295,18 +317,11 @@ footer p a{
 
 @media(max-width: 800px){
   .about-text{
-    max-width: 100%;
-    border-radius: 0;
     text-wrap: pretty;
   }
 
  
-  .about-section img{
-    max-width: 100%;
-    padding: 1rem;
-    padding-top: 0;
-    border-radius: 1rem;
-  }
+
 
   footer{
     padding: 1rem 0 0 0;
@@ -318,6 +333,27 @@ footer p a{
     margin-bottom: 1rem;
   }
 
+}
+
+@media(max-width: 700px){
+
+  header{
+    padding-inline: 0;
+  }
+  .header-image{
+    max-width: 100%;
+    padding-top: 0;
+    border-radius: 0;
+  }
+  .about-section img{
+    max-width: 100%;
+    padding-top: 0;
+    border-radius: 0;
+  }
+  .about-text{
+    max-width: 100%;
+    border-radius: 0;
+  }
 }
 
 
